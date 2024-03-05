@@ -1,0 +1,175 @@
+.pixelify-sans-fuente {
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-color: rgb(44, 10, 65);
+    color: white;
+    font-weight: 800;
+}
+input:hover, label:hover, button{
+    cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABFklEQVRYR9WXURLDIAhE6/0PbSdOtUpcd1Gnpv1KGpTHBpCE1/cXq+vrMph7dGvXZTtpfW10DCA5jrH1H0Jhs5E0hnZdCR+vb5S8Nn8mQCeS9BdSalYJqMBjAGzq59xAESN7VFVUgV8AZB/dZBR7QTFDCqGquvUBVVoEtgIwpQRzmANSFHgWQKExHdIrPeuMvQNDarXe6nC/AutgV3JW+6bgqQLeV8FekRtgV+ToDKEKnACYKsfZjjkam7a0ZpYTytwmgainpC3HvwBocgKOxqRjehoR9DFKNFYtOwCGYCszobeCbl26N6yyQ6g8X/Wex/rBPsNEV6qAMaJPMynIHQCoSqS9JSMmwef51LflTgCRszU7DvAGiV6mHWfsaVUAAAAASUVORK5CYII=), auto;
+}
+
+
+.iframeDiv{
+    padding-bottom:38vh; 
+    position:relative; 
+    display:inline-block; 
+    width: 49%; 
+    border: 5px groove #ffffff;
+}
+.number{
+    position: absolute;
+    border: 1px solid #666666;
+    background: #0617ff26;
+    border-radius: 5px;
+    padding: 5px;
+    left: 0;
+    right: 0;
+    width: fit-content;
+    margin: auto;
+    margin-top: 10px;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: cursive;
+    z-index: 1;
+}
+.number.left{left: 100px;}
+.number.right{right: 100px;}
+#modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    text-align: center;
+    z-index: 1;
+}
+
+.modalinfo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: black;
+    font-family: math;
+}
+.modalinfo span{
+    color: #1500ff;
+}
+
+.close{
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    border: 0;
+    font-size: 20px;
+    font-weight: 800;
+}
+/* .modalbutton{position: absolute;right:30px;} */
+.copy{padding: 5px;}
+.creador{
+    float: left;
+    font-size: 24px;
+}
+.creador-span{
+    color: #7369e9;
+}
+.right{float: right;}
+.right img{width: 13px; height: auto; margin-right: 5px;}
+.crono{
+    position: absolute;
+    border: 1px solid #666666;
+    background: #ffffff;
+    border-radius: 5px;
+    padding: 5px;
+    right: 18px;
+    width: fit-content;
+    margin: auto;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: cursive;
+    z-index: 1;
+    bottom: 18px;  
+}
+.boton{display:inline-block;width:18px;height:18px;position:relative; vertical-align: middle;}
+.start{background:url('https://i.ibb.co/WDTn0Xh/start.png') 0 0 no-repeat; background-size: contain;}
+.stop{background:url('https://i.ibb.co/1srKKd0/pause.png') 0 0 no-repeat; background-size: contain;}
+.reiniciar{background:url('https://i.ibb.co/CwwLDJG/delete.png')0 0 no-repeat; background-size: contain;}
+.land{
+    display:inline-block;
+    width: 15%;
+    height: 100px;
+    border: 5px groove #ffffff;
+    border-radius: 5px;
+    padding: 5px;
+    position: relative;
+    vertical-align: middle;
+    margin-right: 50px;
+    background-color: rgb(80, 29, 77);
+    color: #0de45f;
+
+
+
+
+}
+.land input[type=checkbox]{
+    margin: 5px 1px 10px 10px;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.land input[type=number]{
+    width: 80px;
+    margin-top: 7px;
+    padding: 2px 0px 0px 14px;
+    font-size: 18px;
+    font-weight: 800;
+    text-align: center;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.botones button{
+    background: #fcfcfc;
+    padding: 5px 50px 5px  50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #000000;
+    font-weight: 700;
+    margin-top: 25px;
+    margin-right: 25px;
+}
+
+.terreno{
+    display: block;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 32px;
+    margin-right: 50px;
+    color: #0de45f;
+}
+
+.navbar{
+    background: #0617ff26;
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 20px;
+}
