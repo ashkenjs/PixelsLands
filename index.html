@@ -26,10 +26,13 @@
                 <a class="nav-link active pixelify-sans-fuente" aria-current="page" href="/index.html">Inicio</a>
               </li>
               <li class="nav-item pixelify-sans-fuente">
-                <a class="nav-link" href="https://discord.com/invite/zMZDUkM7Nb">Discord</a>
+                <a class="nav-link" href="https://discord.com/invite/zMZDUkM7Nb" target="_blank">Discord</a>
               </li>
               <li class="nav-item pixelify-sans-fuente">
-                <a class="nav-link" href="https://play.pixels.xyz/">Pixels</a>
+                <a class="nav-link" href="https://play.pixels.xyz/" target="_blank">Pixels</a>
+              </li>
+              <li class="nav-item pixelify-sans-fuente">
+                <a class="nav-link" href="/instrucciones.html">Instrucciones</a>
               </li>
             </ul>
           </div>
@@ -66,16 +69,13 @@
             <button type="button" class ="btn btn-primary" id="next">Siguiente</button>
             <button type="button" class ="btn btn-primary" id="back">Anterior</button>
             <button type="button" class ="btn btn-warning"id="random">Aleatorio</button>
-            <button type="button" class ="btn btn-danger" onclick="openModal()">?</button>
         </div>
     <hr>
 
     <div class="iframeDiv">
         <div class="number" id="number1" onclick="copy(event)"></div>
         <div class="crono">
-            <input type="time" id="time1" class="time" value="00:00">
-            <div class="boton start"></div>
-            <div class="boton stop"></div>
+            <span class="numframe">1</span>
         </div>
         <iframe width="100%" height="100%" id="resultadoIframe1"
             src=""
@@ -85,9 +85,7 @@
     <div class="iframeDiv">
         <div class="number" id="number2" onclick="copy(event)"></div>
         <div class="crono">
-            <input type="time" id="time2" class="time" value="00:00">
-            <div class="boton start"></div>
-            <div class="boton stop"></div>
+            <span class="numframe">2</span>
         </div>
         <iframe width="100%" height="100%" id="resultadoIframe2"
             src=""
@@ -97,9 +95,7 @@
     <div class="iframeDiv">
         <div class="number" id="number3" onclick="copy(event)"></div>
         <div class="crono">
-            <input type="time" id="time3" class="time" value="00:00">
-            <div class="boton start"></div>
-            <div class="boton stop"></div>
+            <span class="numframe">3</span>
         </div>
         <iframe width="100%" height="100%" id="resultadoIframe3"
             src=""
@@ -109,9 +105,7 @@
     <div class="iframeDiv">
         <div class="number" id="number4" onclick="copy(event)"></div>
         <div class="crono">
-            <input type="time" id="time4" class="time" value="00:00">
-            <div class="boton start"></div>
-            <div class="boton stop"></div>
+            <span class="numframe">4</span>
         </div>
         <iframe width="100%" height="100%" id="resultadoIframe4"
             src=""
@@ -120,45 +114,11 @@
     </div>
     <!-- <iframe id="resultadoIframe" src="" frameborder="0"></iframe> -->
     <div class="copy">
-        <div class="creador pixelify-sans-fuente">Realizado Por <span class="creador-span">BastianGX</span></div>
+        <div class="creador pixelify-sans-fuente">Realizado Por <span class="creador-span">BastianGX</span> Para la Comunidad Discord <a class="creador-discord" href="https://discord.com/invite/zMZDUkM7Nb" target="_blank">Ark_Angel</a></div>
         <div class="right">Donaciones  <img src="https://katana.roninchain.com/static/media/ron.98041023.svg" alt="">0x9f3a1f56cbd604511f49f544a4a7b2de7e0d921a</div></div>
     <script src="script/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-    <div class="modal" id="modal">
-        <div class="modalinfo">
-            <button onclick="closeModal()" class="close">X</button>
-            <h1>Pasos a seguir</h1>
-            <hr>
-            <span>#Botón Buscar</span>
-            <p>
-                Al presionar podras buscar las islas que hayas colocado en cada casilla, 
-                si llegas a modificar una sola isla las demas quedaran con su número original.
-            </p>
-            <span>#Boton Actualizar</span>
-            
-            <p>
-                Sirve para actualizar el grupo de islas que hayas colocado. Esto se debe a un fallo que a veces el juego deja de enviar informacion de una isla en tiempo real.
-            </p>
-            <span>#Botones Grupo Anterior y Grupo Siguiente</span>
-            
-            <p>
-                Con estos botones podrás cambiar de grupo de islas al presionarlos. Ejemplo si presionas el botón siguiente te mostrará el siguiente grupo de islas cercanas a las actuales en pantalla. Si presionas el botón anterior te mostrará el grupo cercano anterior.
-            </p>
-            <span>#Boton Aleatorio</span>
-            
-            <p>
-                Con el podrás buscar de forma un grupo de lands aleatorias. si deseas bloquear una de las lands en el grupo, tendrás que presionar la casilla de Bloquear Land #, dependiendo de la casilla a bloquear, de esta forma solo cambiaran aquellas que no esten bloqueadas.
-            </p>
-            <hr>
-            Este es un proyecto armado para el grupo de discord. <br>
-            Si deseas ayudar con una donación es más que bienvenida.
-            <br> <br>
-            Esta es mi Ronins Wallet <span>0x9f3a1f56cbd604511f49f544a4a7b2de7e0d921a</span> 
-            <br> <br>
-            <br> <br>
-            <button type="button" class ="btn btn-success" onclick="closeModal()">Cerrar</button>
-        </div>
-    </div>
+
 </body>
 </html>

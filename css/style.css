@@ -88,27 +88,16 @@ input:hover, label:hover, button{
 .creador-span{
     color: #7369e9;
 }
+
+.creador-discord{
+    color: #45a3e2;
+    text-decoration: none;
+}
+
 .right{float: right;}
 .right img{width: 13px; height: auto; margin-right: 5px;}
-.crono{
-    position: absolute;
-    border: 1px solid #666666;
-    background: #ffffff;
-    border-radius: 5px;
-    padding: 5px;
-    right: 18px;
-    width: fit-content;
-    margin: auto;
-    color: #ffffff;
-    font-weight: bold;
-    font-family: cursive;
-    z-index: 1;
-    bottom: 18px;  
-}
-.boton{display:inline-block;width:18px;height:18px;position:relative; vertical-align: middle;}
-.start{background:url('https://i.ibb.co/WDTn0Xh/start.png') 0 0 no-repeat; background-size: contain;}
-.stop{background:url('https://i.ibb.co/1srKKd0/pause.png') 0 0 no-repeat; background-size: contain;}
-.reiniciar{background:url('https://i.ibb.co/CwwLDJG/delete.png')0 0 no-repeat; background-size: contain;}
+
+
 .land{
     display:inline-block;
     width: 15%;
@@ -172,4 +161,17 @@ input:hover, label:hover, button{
     padding: 5px;
     font-weight: bold;
     font-size: 20px;
+}
+
+.titulos{
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.numframe{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #000000;
+    padding: 10px;
 }
