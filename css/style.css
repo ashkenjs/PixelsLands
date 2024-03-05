@@ -187,3 +187,19 @@ input:hover, label:hover, button{
     width: 200px;
     height: auto;
 }
+
+.etiqueta{
+    position: absolute;
+    border: 1px solid #666666;
+    background: #ffffff;
+    border-radius: 5px;
+    padding: 5px;
+    right: 18px;
+    width: fit-content;
+    margin: auto;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: cursive;
+    z-index: 1;
+    bottom: 18px;  
+}
